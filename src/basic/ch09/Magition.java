@@ -54,7 +54,7 @@ public class Magition {
 		System.out.println("방어력 " + MagitionArmour);
 		System.out.println("현재마나 " + maNa);
 	}
-
+	
 	double remainHp;
 	double totalDamage;
 }
