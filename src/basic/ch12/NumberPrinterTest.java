@@ -14,7 +14,7 @@ public class NumberPrinterTest {
 		
 		n2.printWaitNumber(); // 고객 5
 		n2.printWaitNumber(); // 고객 6
-
+		System.out.println(n1.waitNumber);
 	}
 
 }

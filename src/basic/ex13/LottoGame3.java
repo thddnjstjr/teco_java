@@ -6,12 +6,40 @@ public class LottoGame3 {
 		 
 		
 		int gameNumber1 = LottoNumberMaker.makeNumber();
+		
+		// 1 , 1 다시 처리 
 		int gameNumber2 = LottoNumberMaker.makeNumber();
 		int gameNumber3 = LottoNumberMaker.makeNumber();
 		int gameNumber4 = LottoNumberMaker.makeNumber();
 		int gameNumber5 = LottoNumberMaker.makeNumber();
 		int gameNumber6 = LottoNumberMaker.makeNumber();
-		
+		LottoNumberMaker rerole = new LottoNumberMaker();
+		boolean go = true;
+		for(int a=0;a<=10;a++) {
+		for(int b=0;b<=100;b++) {
+			if(gameNumber1 == gameNumber2) {
+				gameNumber2 = rerole.makeNumber();
+				continue;
+			}
+			if(gameNumber2 == gameNumber3) {
+				gameNumber3 = rerole.makeNumber();
+				continue;
+			}
+			if(gameNumber3 == gameNumber4) {
+				gameNumber4 = rerole.makeNumber();
+				continue;
+			}
+			if(gameNumber4 == gameNumber5) {
+				gameNumber5 = rerole.makeNumber();
+				continue;
+			}
+			if(gameNumber5 == gameNumber6) {
+				gameNumber6 = rerole.makeNumber();
+				b--;
+				continue;
+			}
+		}
+		}
 		
 		int tempBox = 0;
 		// 테스트 값 :  5, 1, 9, 7, 2, 3
@@ -41,7 +69,11 @@ public class LottoGame3 {
 			gameNumber5 = gameNumber6;
 			gameNumber6 = tempBox;
 		}
-		}
+		}		
+
+	
+		
+
 		System.out.print(gameNumber1 + "\t");
 		System.out.print(gameNumber2+ "\t");
 		System.out.print(gameNumber3+ "\t");

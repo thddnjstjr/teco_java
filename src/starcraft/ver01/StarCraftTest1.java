@@ -23,6 +23,8 @@ public class StarCraftTest1 {
 		GateWay gateway2 = new GateWay(2);
 		Zealot zealot1 = gateway.createZealot("질럿1");
 		Zealot zealot2 = gateway.createZealot("질럿2");
+		System.out.println(zealot1.getName());
+		System.out.println(zealot2.getName());
 		System.out.println(gateway.getNumber() + " : " +gateway.getCount());
 		System.out.println(gateway2.getNumber() + " : " +gateway2.getCount());
 		System.out.println("-------------------------");

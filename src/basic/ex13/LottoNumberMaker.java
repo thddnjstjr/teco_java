@@ -31,7 +31,7 @@ public class LottoNumberMaker {
 		// 자바 도구 -- 표준 API
 		// 난수 발생기 -> 랜덤적인 값을 생성
 		Random random = new Random();
-		int resultNumber = random.nextInt(45) + 1; // 0 ~~~ 44
+		int resultNumber = random.nextInt(10) + 1; // 0 ~~~ 44
 		return resultNumber;
 	}
 	

@@ -13,6 +13,8 @@ public class StarCraftTest2 {
 		Zergling devouringOne = new Zergling("디바우링 원");
 		Zergling zagara = new Zergling("자가라");
 		Zergling abathur = new Zergling("아바투르");
+		zeratul.attackZergling(zagara);
+		zagara.showInfo();
 		
 		for(int i = 0; i<10; i++) {
 			jimRaynor.attackZealot(zeratul);

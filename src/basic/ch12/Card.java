@@ -8,8 +8,8 @@ public class Card {
 	String userName;
 	public Card(String n) {
 		userName = n;
-		userNumber= Card.cardNumber;
-		Card.cardNumber++;
+		userNumber= cardNumber;
+		cardNumber++;
 	}
 	public void changeName(String n) {
 		userName = n;
