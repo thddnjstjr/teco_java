@@ -28,7 +28,8 @@ public class Classroom {
 		for(int i = 0; i < MAX_STUDENT; i++) {
 			// students[i] --> [객체주소] --> heap 영역 객체를 참고
 			if(students[i] != null) {
-				System.out.println("name : " +students[i].getName() + " , age : " + students[i].getAge());
+				System.out.println("name : " +students[i].getName() + " , age : " 
+			+ students[i].getAge());
 			}
 			
 			

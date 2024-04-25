@@ -34,8 +34,7 @@ public class ToyMachineTest {
 					if (toy.prize(pro).stock < 1) {
 						System.out.println("재고가 없습니다 코인을 환불합니다");
 						coin++;
-					}
-					else {
+					} else {
 						((LionDoll) toy.prize(pro)).sound();
 						System.out.println("재고가" + toy.prize(pro).stock + "개 남았습니다");
 					}
@@ -43,8 +42,7 @@ public class ToyMachineTest {
 					if (toy.prize(pro).stock < 1) {
 						System.out.println("재고가 없습니다 코인을 환불합니다");
 						coin++;
-					}
-					else {
+					} else {
 						((TeddyBear) toy.prize(pro)).sound();
 						System.out.println("재고가" + toy.prize(pro).stock + "개 남았습니다");
 					}
@@ -52,8 +50,7 @@ public class ToyMachineTest {
 					if (toy.prize(pro).stock < 1) {
 						System.out.println("재고가 없습니다 코인을 환불합니다");
 						coin++;
-					}
-					else {
+					} else {
 						((Airpot) toy.prize(pro)).sound();
 						System.out.println("재고가" + toy.prize(pro).stock + "개 남았습니다");
 					}
