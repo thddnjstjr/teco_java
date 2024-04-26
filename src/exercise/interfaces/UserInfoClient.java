@@ -15,8 +15,8 @@ public class UserInfoClient {
 		
 		// 데이터를 받아서 IUserInfoDao를 구현한 구현 클래스 에게 전달하고자 한다.
 		// UserInfoMySqlDaoImpl, UserInfoOrcleDaoImpl
-		// IUserInfoDao iuserInfoDao1 = new UserInfoMySqlDaoImpl();
-		 IUserInfoDao iuserInfoDao1 = new UserInfoOrcleDaoImpl();
+		 IUserInfoDao iuserInfoDao1 = new UserInfoMySqlDaoImpl();
+		 // IUserInfoDao iuserInfoDao1 = new UserInfoOrcleDaoImpl();
 		
 		iuserInfoDao1.insertUserInfo(info1);
 		iuserInfoDao1.updateUserInfo(info1);

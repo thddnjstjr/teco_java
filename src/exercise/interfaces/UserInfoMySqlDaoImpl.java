@@ -5,7 +5,7 @@ public class UserInfoMySqlDaoImpl implements IUserInfoDao {
 	@Override
 	public void insertUserInfo(UserInfo info) {
 		// SQL : 질의어 - 배웠다면 -- MySQL 언어를 활용해서 구현
-		System.out.println("insert into user values(info.getUserName())");
+		System.out.println("insert into user values" + (info.getUserName()));
 	}
 
 	@Override

@@ -8,6 +8,7 @@ public class AnimalTest {
 		Animal dog = new Dog(); // 다형성, 업캐스팅 된 상태
 		Animal bird = new Bird();
 		
+		
 		dog.eat();
 		dog.move();
 		
