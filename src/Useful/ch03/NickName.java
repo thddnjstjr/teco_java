@@ -17,8 +17,10 @@ public class NickName extends RuntimeException{
 		if(nick.length() < 3) {
 			throw new RuntimeException("닉네임은 3글자 이상이어야합니다");
 		}
-		if(nick.matches("^[~!@#$%^&*]$")) {
+		for(int i=0; i<nick.length();i++) {
+		if(nick.charAt(i).matches("[^a-zA-Z0-9)]")) {
 			throw new RuntimeException("닉네임에 특수문자는 들어갈수없습니다");
+		}
 		}
 		this.nick = nick;
 	}
