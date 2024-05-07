@@ -1,6 +1,5 @@
 package structure;
 
-import java.util.Iterator;
 
 /*
  * 배열을 활용 클래스를 설계
