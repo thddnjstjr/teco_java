@@ -87,7 +87,7 @@ public class IntArrayQueue2 {
 		queue.enqueue(100);
 		queue.enqueue(200);
 		queue.enqueue(300);
-		queue.enqueue(400); // 안들어감
+		queue.enqueue(400); 
 		
 		System.out.println(queue.dequeue());
 		System.out.println(queue.dequeue());
@@ -95,11 +95,6 @@ public class IntArrayQueue2 {
 		
 		queue.printAll();
 		
-		
-		
-		
 	}
-	
-	
 	
 }

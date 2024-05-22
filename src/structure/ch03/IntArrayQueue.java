@@ -14,8 +14,8 @@ public class IntArrayQueue {
 		this.front = 0;
 		this.rear = -1;
 		this.size = 0;
-		
 	}
+	
 	public boolean isEmpty() {
 		return size == 0;
 	}
@@ -66,7 +66,7 @@ public class IntArrayQueue {
 	}
 	
 	// todo - 3 데이터 찾기 (peak)
-	public int peek() {
+	public int peak() {
 		if(isEmpty()) {
 			System.out.println("큐 메모리 공간에 요소가 없습니다.");
 			return -9999;
@@ -94,7 +94,7 @@ public class IntArrayQueue {
 		// queue.dequeue(); // 맨 처음 들어온 녀석부터 꺼내지고 삭제 처리 된다.
 		
 		System.out.println(queue.dequeue());
-		System.out.println(queue.peek());
+		System.out.println(queue.peak());
 		System.out.println(queue.dequeue());
 		System.out.println(queue.dequeue());
 		System.out.println(queue.dequeue());

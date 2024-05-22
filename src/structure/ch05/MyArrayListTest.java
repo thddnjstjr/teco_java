@@ -74,7 +74,8 @@ public class MyArrayListTest {
 		// 요소의 위치(index) 확인
 		System.out.println("요소 3이 몇 번째 인덱스에 위치 하니 -> " + nums.indexOf(3));
 		System.out.println("요소 10이 몇 번째 인덱스에 위치 하니 -> " + nums.indexOf(10));
-		System.out.println("요소 10이 몇 번째 인덱스에 위치 하니 -> " + nums.indexOf(500));
+		System.out.println("요소 500이 몇 번째 인덱스에 위치 하니 -> " + nums.indexOf(500));
+		// 없다면 -1을 반환
 		
 		// Iterator 요소 순회 ( 반복자 )
 		Iterator<Integer> iter = nums.iterator();

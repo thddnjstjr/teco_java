@@ -28,6 +28,7 @@ public class MyLinkedList {
 		} else {
 			
 			// 항상 요소 찾기는 head 부터 시작
+			// 야스오 티모 소라카
 			Node preNode = head;
 			
 			while(preNode.next != null) {
@@ -35,7 +36,6 @@ public class MyLinkedList {
 			}
 			// 핵심 코드
 			preNode.next = createNode;
-			
 		}
 		
 		count++;
@@ -107,7 +107,6 @@ public class MyLinkedList {
 		for(int i = 0; i < index; i++) {
 			tempNode = tempNode.next; // 다음 요소는 무조건 next 에 담겨 있다.
 		}
-		
 		return tempNode;
 	}
 	
@@ -121,11 +120,13 @@ public class MyLinkedList {
 	public static void main(String[] args) {
 		MyLinkedList linkedList = new MyLinkedList();
 		linkedList.addElement("야스오");
+		System.out.println(linkedList.head.next);
 		linkedList.addElement("티모");
+		System.out.println(linkedList.head.next.getData());
 		linkedList.addElement("소라카");
-		
+		System.out.println(linkedList.head.next.next.getData());
 		linkedList.printAll();
-		linkedList.removeElement(1);
+		linkedList.removeElement(０);
 		linkedList.printAll();
 		System.out.println(linkedList.getNodeByIndex(1).getData());
 		

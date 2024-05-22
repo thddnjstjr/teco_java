@@ -130,5 +130,7 @@ public class Practice {
 		System.out.println(practice.getElement(0));
 		practice.removeElement(0);
 		practice.printAll();
+		practice.insertElement(3, 5);
+		practice.printAll();
 	}
 }
