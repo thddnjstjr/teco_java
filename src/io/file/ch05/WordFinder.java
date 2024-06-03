@@ -45,7 +45,6 @@ public class WordFinder {
 				if(entry.getValue() > maxCount) {
 					mostCommon = entry.getKey();
 					maxCount = entry.getValue();
-					
 				}
 			}
 			System.out.println("가장 많이 사용된 단어 : " + mostCommon + " , " + maxCount + "회");

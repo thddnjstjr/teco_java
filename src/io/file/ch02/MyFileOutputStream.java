@@ -18,9 +18,7 @@ public class MyFileOutputStream {
 		// 자바 8버전 부터 제공
 		// try-catch-resource -> (자동으로 자원 닫아 준다)
 		
-		try(
-				FileOutputStream fos = new FileOutputStream("output.txt", false)
-		){
+		try(FileOutputStream fos = new FileOutputStream("output.txt", false)){
 			// data(String) 가지고 있는 문자열들을 바이트 배열로 반환 처리
 			
 			// byte[] bytes = data.getBytes();
@@ -29,7 +27,7 @@ public class MyFileOutputStream {
 			
 			System.out.println("bytes : " + bytes);
 			for(int i = 0; i < bytes.length; i++) {
-				System.out.println("bytes[i] : " + bytes[i]);
+				System.out.println("bytes["+ i +"] : " + bytes[i]);
 			}
 			
 			// 연결된 스트림을 활용해서 바이트 배열을 파일에다가 흘려 보냄

@@ -1,5 +1,6 @@
 package io.file.ch04;
 
+import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 public class SingleCharReader {
@@ -14,14 +15,15 @@ public class SingleCharReader {
 		System.out.println("문자 하나를 입력 하세요");
 		
 		// try catch resource
-		try (InputStreamReader isr = new InputStreamReader(System.in)){
+		try (InputStreamReader isr = new InputStreamReader(System.in);
+				BufferedReader br = new BufferedReader(isr)){
 			
-		int charData = isr.read(); // 사용자가 키보드에 값을 입력할 때 까지 대기
+		String charData = br.readLine(); // 사용자가 키보드에 값을 입력할 때 까지 대기
 		
-		if(charData != -1) {
+		if(charData != null) {
 			// -1 --> 파일 끝 (EOF) 가 아니라면 출력 ... 
 			// char --> 2byte (한글은 2byte로 거의 모든 글자 표현이 가능하다)
-			System.out.println("사용자가 입력한 값 : " + (char)charData);
+			System.out.println("사용자가 입력한 값 : " + charData);
 		}
 			
 		} catch (Exception e) {

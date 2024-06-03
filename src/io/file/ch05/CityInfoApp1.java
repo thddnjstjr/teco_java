@@ -24,18 +24,13 @@ public class CityInfoApp1 {
 				System.out.println(city + "에 대한 정보 입니다.");
 				
 				String line;
+				// 한줄씩 읽음
 				while((line = br.readLine()) != null) {
 					System.out.println(line);
 				}
-				
-				
-				
 			} catch (Exception e) {
 				System.out.println("해당 파일을 찾을 수 없습니다.");
 			}
-			
-			
-			
 		} catch (Exception e){
 			e.printStackTrace();
 		}
